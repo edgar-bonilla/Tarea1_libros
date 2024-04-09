@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <!-- Bootstrap CSS -->
+       <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+{{{navigation}}}
+    <div class="container">
+        <h1 class="text-center mt-5 mb-4">Books</h1>
+         <table class="table">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Edition</th>
+                    <th>Copyright</th>
+                    <th>Language</th>
+                    <th>Pages</th>
+                    <th>Author</th>
+                    <th>Author_ID</th>
+                    <th>Publisher</th>
+                    <th>Publisher_ID</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#books}}
+                <tr>
+                    <td>{{id}}</td>
+                    <td>{{title}}</td>
+                    <td>{{edition}}</td>
+                    <td>{{copyright}}</td>
+                    <td>{{language}}</td>
+                    <td>{{pages}}</td>
+                    <td>{{author}}</td>
+                    <td>{{author_id}}</td>
+                    <td>{{publisher}}</td>
+                    <td>{{publisher_id}}</td>
+                </tr>
+                {{/books}}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

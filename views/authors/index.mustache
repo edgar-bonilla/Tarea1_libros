@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authors</title>
+    <!-- Bootstrap CSS -->
+       <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    {{{navigation}}}
+    <div class="container">
+        <h1 class="text-center mt-5 mb-4">Authors</h1>
+         <table class="table">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Author</th>
+                    <th>Nationality</th>
+                    <th>Birth Year</th>
+                    <th>Fields</th>
+                    <th>Books_ID</th>
+                    <th>Books_Title</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#authors}}
+                <tr>
+                    <td>{{id}}</td>
+                    <td>{{author}}</td>
+                    <td>{{nationality}}</td>
+                    <td>{{birth_year}}</td>
+                    <td>{{fields}}</td>
+                    <td>{{books__book_id}}</td>
+                    <td>{{books__title}}</td>
+                </tr>
+                {{/authors}}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+
+

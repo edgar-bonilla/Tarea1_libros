@@ -1,0 +1,48 @@
+<?php
+require 'vendor/autoload.php';
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publishers</title>
+    <!-- Bootstrap CSS -->
+       <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+  {{{navigation}}}
+    <div class="container">
+         <h1 class="text-center mt-5 mb-4">Publishers</h1>
+         <table class="table">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Publisher</th>
+                    <th>Country</th>
+                    <th>Founded</th>
+                    <th>Genre</th>
+                    <th>Books_ID</th>
+                    <th>Books_Title</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#publishers}}
+                <tr>
+                    <td>{{id}}</td>
+                    <td>{{publisher}}</td>
+                    <td>{{country}}</td>
+                    <td>{{founded}}</td>
+                    <td>{{genre}}</td>
+                    <td>{{books__book_id}}</td>
+                    <td>{{books__title}}</td>
+                </tr>
+                {{/publishers}}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+
+    
